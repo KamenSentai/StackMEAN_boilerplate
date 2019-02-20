@@ -35,7 +35,7 @@ export class AppComponent {
 
   public formSubmit(data: UserModel): void {
     this.AuthService.register(this.formData)
-    .then(apiRespnse => console.log(apiRespnse))
-    .catch(apiRespnse => console.error(apiRespnse));
+    .then(apiResponse => console.log(apiResponse))
+    .catch(apiResponse => console.error(apiResponse));
   }
 }
